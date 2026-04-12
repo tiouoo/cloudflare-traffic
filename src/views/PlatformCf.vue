@@ -492,7 +492,7 @@ const chartRefs = ref<Record<string, Record<string, HTMLElement | null>>>({});
 const charts = ref<Record<string, Record<string, echarts.ECharts | null>>>({});
 
 // 设置图表引用
-const setChartRef = (el: HTMLElement | null, domain: string, type: string) => {
+const setChartRef = (el: any, domain: string, type: string) => {
   if (!chartRefs.value[domain]) {
     chartRefs.value[domain] = {};
   }
