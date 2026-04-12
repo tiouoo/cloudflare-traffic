@@ -1,0 +1,155 @@
+@import url(./value.css);
+
+@font-face {
+  font-family: 'ZhuZiAYuanJWD';
+  src: url(../static/ZhuZiAWan.woff2);
+  font-display: swap;
+  font-weight: lighter;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+span {
+  color: var(--text-color);
+}
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  user-select: none;
+  transition: none !important;
+}
+body {
+  font-family: 'ZhuZiAYuanJWD', sans-serif !important;
+  background-size: cover;
+  background-color: var(--bg);
+  color: #e0e0e0;
+  display: flex;
+  justify-content: center;
+  min-height: 100vh;
+  overflow: hidden;
+  overflow-x: hidden;
+  width: 100vw;
+  overflow-y: scroll;
+  overflow-y: scroll;
+  margin-right: -5px;
+}
+/* 全局滚动条美化 */
+::-webkit-scrollbar {
+  width: 5px;
+  height: 8px;
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: var(--scrollbar-thumb);
+  border-radius: 8px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: var(--scrollbar-thumb-hover);
+}
+::-webkit-scrollbar-corner {
+  background: transparent;
+}
+
+/* 暗色模式下的 Ant Design 组件适配 */
+@media (prefers-color-scheme: dark) {
+  /* Collapse 组件 */
+  .ant-collapse {
+    background: transparent;
+    border-color: var(--card-border);
+  }
+  .ant-collapse-item {
+    border-color: #334155;
+  }
+  .ant-collapse-header {
+    color: var(--text-color) !important;
+  }
+  .ant-collapse-content {
+    background: var(--card-bg);
+    border-color: #334155;
+  }
+  .ant-collapse-content-box {
+    color: var(--text-color);
+  }
+
+  /* Select 组件 */
+  .ant-select-selector {
+    background: var(--card-bg) !important;
+    border-color: #334155 !important;
+    color: var(--text-color) !important;
+  }
+  .ant-select-arrow {
+    color: var(--text-color-light);
+  }
+  .ant-select-dropdown {
+    background: var(--card-bg);
+    border-color: #334155;
+  }
+  .ant-select-item {
+    color: var(--text-color);
+  }
+  .ant-select-item-option-active,
+  .ant-select-item-option-selected {
+    background: #334155 !important;
+  }
+
+  /* Menu 组件 */
+  .ant-menu {
+    background: transparent !important;
+  }
+  .ant-menu-item,
+  .ant-menu-submenu-title {
+    color: var(--text-color) !important;
+  }
+  .ant-menu-item:hover,
+  .ant-menu-submenu-title:hover {
+    color: var(--link-color) !important;
+  }
+
+  /* Timeline 组件 */
+  .ant-timeline-item-content {
+    color: var(--text-color);
+  }
+  .ant-timeline-item-tail {
+    border-color: #334155;
+  }
+
+  /* Button 组件 */
+  .ant-btn {
+    background: var(--card-bg);
+    border-color: #334155;
+    color: var(--text-color);
+  }
+  .ant-btn:hover {
+    border-color: var(--link-color);
+    color: var(--link-color);
+  }
+  .ant-btn:disabled {
+    background: #1e293b;
+    border-color: #334155;
+    color: #64748b;
+  }
+}
+#app {
+  width: 100vw;
+  overflow-x: hidden;
+  overflow-y: scroll;
+}
+a:hover,
+a:link,
+a:visited,
+a:active,
+a:focus {
+  text-decoration: none;
+  outline: none;
+  border: none;
+  color: inherit;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+a {
+  cursor: pointer !important;
+  text-decoration: none !important;
+}

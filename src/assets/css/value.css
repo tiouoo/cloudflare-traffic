@@ -1,0 +1,23 @@
+:root {
+  --green: #22c55e;
+  --red: #ef4444;
+}
+
+:root {
+  --bg: #f8fafc;
+  --card-bg: #ffffff;
+  --card-radius: 12px;
+  --card-border: #e5e7eb 1px solid;
+  --text-color: #4c4948;
+  --text-color-light: #64748b;
+  --scrollbar-thumb: #49b1f5;
+}
+
+[data-theme='dark'] {
+  --bg: #0f172a;
+  --card-bg: #1e293b;
+  --card-border: #334155 1px solid;
+  --text-color: #e2e8f0;
+  --text-color-light: #94a3b8;
+  --scrollbar-thumb: #3b82f6;
+}
