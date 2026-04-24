@@ -1,6 +1,6 @@
 <template>
   <div class="container">
-    <span class="title">traffic.tio.ooo</span>
+    <span class="title">traffic.tiouo.xyz</span>
     <div class="nav-container">
       <a-menu
         v-model:selectedKeys="current"
@@ -31,7 +31,7 @@ const handleMenuClick: MenuProps['onClick'] = (info) => {
     return;
   }
   if (info.key == 'github') {
-    window.open('https://github.com/tiouoo')
+    window.open('https://github.com/tiouoo');
     return;
   }
   if (info.key) {
